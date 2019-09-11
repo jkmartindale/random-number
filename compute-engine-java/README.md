@@ -32,7 +32,7 @@ Create this file in the projet directory:
 ```java
 import java.lang.Math;
 
-public class javaJarFile {
+public class randNum {
 
 	public static void main(String[] args) {
 		double number = 0.0;
