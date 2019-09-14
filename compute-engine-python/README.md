@@ -240,3 +240,15 @@ Sep 14 21:57:13 python uwsgi[1007]: spawned uWSGI worker 3 (pid: 1011, cores: 1)
 Sep 14 21:57:13 python uwsgi[1007]: spawned uWSGI worker 4 (pid: 1012, cores: 1)
 Sep 14 21:57:13 python uwsgi[1007]: spawned uWSGI worker 5 (pid: 1013, cores: 1)
 ```
+
+## Static IP Address
+You probably want to make sure that the IP address stays the same if you plan on having this service around for a while.
+
+Under VPC Network in the Google Cloud Platform Console sidebar, select **External IP Addresses**:
+![VPC Network](vpc-network.png)
+
+Give the IP address a name and attach it to the appropriate VM:
+![Reserve IP Address](reserve-ip-address.png)
+
+If you wish to point a domain to this service, go to your domain's DNS management console and add an A record pointing to the external IP address shown in the external IP addresses list:
+![External IP Address](external-address.png)
